@@ -66,6 +66,7 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, mu, sigma )`][@stdlib/stats/base/dists/normal/cdf]</span><span class="delimiter">: </span><span class="description">normal distribution cumulative distribution function.</span>
+-   <span class="signature">[`logcdf( x, mu, sigma )`][@stdlib/stats/base/dists/normal/logcdf]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of the cumulative distribution function (CDF) for a normal distribution.</span>
 -   <span class="signature">[`logpdf( x, mu, sigma )`][@stdlib/stats/base/dists/normal/logpdf]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of the probability density function (PDF) for a normal distribution.</span>
 -   <span class="signature">[`mgf( t, mu, sigma )`][@stdlib/stats/base/dists/normal/mgf]</span><span class="delimiter">: </span><span class="description">normal distribution moment-generating function (MGF).</span>
 -   <span class="signature">[`pdf( x, mu, sigma )`][@stdlib/stats/base/dists/normal/pdf]</span><span class="delimiter">: </span><span class="description">normal distribution probability density function (PDF).</span>
@@ -238,6 +239,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [@stdlib/stats/base/dists/normal/variance]: https://github.com/stdlib-js/stats-base-dists-normal-variance
 
 [@stdlib/stats/base/dists/normal/cdf]: https://github.com/stdlib-js/stats-base-dists-normal-cdf
+
+[@stdlib/stats/base/dists/normal/logcdf]: https://github.com/stdlib-js/stats-base-dists-normal-logcdf
 
 [@stdlib/stats/base/dists/normal/logpdf]: https://github.com/stdlib-js/stats-base-dists-normal-logpdf
 
