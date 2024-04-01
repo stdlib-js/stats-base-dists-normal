@@ -68,7 +68,7 @@
     "@stdlib/math-base-assert-is-nan": "^0.2.1",
     "@stdlib/math-base-special-abs": "^0.2.1",
     "@stdlib/math-base-special-abs2": "^0.2.1",
-    "@stdlib/math-base-special-erfc": "^0.2.1",
+    "@stdlib/math-base-special-erfc": "^0.2.2",
     "@stdlib/math-base-special-erfcx": "^0.2.1",
     "@stdlib/math-base-special-erfinv": "^0.2.1",
     "@stdlib/math-base-special-exp": "^0.2.2",
