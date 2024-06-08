@@ -35,38 +35,32 @@ limitations under the License.
 
 > Normal distribution.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-normal
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-normal = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var normal = require( 'path/to/vendor/umd/stats-base-dists-normal/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.normal;
-})();
-</script>
+var normal = require( '@stdlib/stats-base-dists-normal' );
 ```
 
 #### normal
@@ -147,22 +141,111 @@ var y = dist.pdf( 2.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var normal = require( '@stdlib/stats-base-dists-normal' );
 
-console.log( objectKeys( normal ) );
+/*
+A bakery is analyzing cake baking times to ensure consistency and better schedule their baking processes.
 
-})();
-</script>
-</body>
-</html>
+The Central Limit Theorem (CLT) states that the average baking times from many batches will follow a normal distribution if there are enough batches (typically n > 30).
+
+Assuming each record represents the average baking time per batch and the bakery has collected the following data:
+
+-      Mean baking time (μ/mu): 20 minutes.
+-      Standard deviation in baking time (σ/sigma): 3 minutes.
+
+We can model the average bake times using a normal distribution with μ (mu) = 20.0 minutes and σ = 3.0 minutes.
+*/
+
+var mu = 20.0;
+var sigma = 3.0;
+
+var normalDist = new normal.Normal( mu, sigma );
+
+// Output the standard deviation of the baking times:
+console.log( normalDist.sigma );
+// => 3.0
+
+// Adjust distribution parameters
+normalDist.sigma = 4.0;
+
+// Adjusted standard deviation to reflect different variance scenario:
+console.log( normalDist.sigma );
+// => 4.0
+
+// Excess kurtosis of a normal distribution (measure of "tailedness"):
+console.log( normalDist.kurtosis );
+// => 0.0
+
+// Median baking time:
+console.log( normalDist.median );
+// => 20.0
+
+// Variance of the baking times after adjusting sigma:
+console.log( normalDist.variance );
+// => 16.0
+
+// Probability density function at the mean baking time:
+console.log( normal.pdf( 20.0, mu, sigma ) );
+// => ~0.133
+
+// Cumulative distribution function at the mean (portion of times ≤ 20 minutes):
+console.log( normal.cdf( 20.0, mu, sigma ) );
+// => ~0.5
+
+// 50th percentile (median) of the baking times:
+console.log( normal.quantile( 0.5, mu, sigma ) );
+// => 20.0
+
+// Moment-generating function value at 0.5 (used in probability theory):
+console.log( normal.mgf( 0.5, mu, sigma ) );
+// => ~67846.291
+
+// Entropy of the normal distribution (measure of uncertainty):
+console.log( normal.entropy( mu, sigma ) );
+// => ~2.518
+
+// Mean baking time:
+console.log( normal.mean( mu, sigma ) );
+// => 20.0
+
+// Median baking time:
+console.log( normal.median( mu, sigma ) );
+// => 20.0
+
+// Mode of the baking times (most frequent value):
+console.log( normal.mode( mu, sigma ) );
+// => 20.0
+
+// Variance of the baking times:
+console.log( normal.variance( mu, sigma ) );
+// => 9.0
+
+// Skewness of the distribution (symmetry measure):
+console.log( normal.skewness( mu, sigma ) );
+// => 0.0
+
+var myquantile = normal.quantile.factory( 20.0, 3.0 );
+
+// 20th percentile (value below which 20% baking times fall):
+console.log( myquantile( 0.2 ) );
+// => ~17.475
+
+// 80th percentile (value below which 80% baking times fall):
+console.log( myquantile( 0.8 ) );
+// => ~22.525
+
+var mylogpdf = normal.logpdf.factory( 20.0, 3.0 );
+
+// Logarithm of the probability density function at the mean:
+console.log( mylogpdf( 20.0 ) );
+// => ~-2.018
+
+// Logarithm of the probability density function at 15 minutes:
+console.log( mylogpdf( 15.0 ) );
+// => ~-3.406
 ```
+
 
 </section>
 
@@ -252,35 +335,35 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/stats/base/dists/normal/ctor]: https://github.com/stdlib-js/stats-base-dists-normal-ctor/tree/umd
+[@stdlib/stats/base/dists/normal/ctor]: https://github.com/stdlib-js/stats-base-dists-normal-ctor
 
-[@stdlib/stats/base/dists/normal/entropy]: https://github.com/stdlib-js/stats-base-dists-normal-entropy/tree/umd
+[@stdlib/stats/base/dists/normal/entropy]: https://github.com/stdlib-js/stats-base-dists-normal-entropy
 
-[@stdlib/stats/base/dists/normal/kurtosis]: https://github.com/stdlib-js/stats-base-dists-normal-kurtosis/tree/umd
+[@stdlib/stats/base/dists/normal/kurtosis]: https://github.com/stdlib-js/stats-base-dists-normal-kurtosis
 
-[@stdlib/stats/base/dists/normal/mean]: https://github.com/stdlib-js/stats-base-dists-normal-mean/tree/umd
+[@stdlib/stats/base/dists/normal/mean]: https://github.com/stdlib-js/stats-base-dists-normal-mean
 
-[@stdlib/stats/base/dists/normal/median]: https://github.com/stdlib-js/stats-base-dists-normal-median/tree/umd
+[@stdlib/stats/base/dists/normal/median]: https://github.com/stdlib-js/stats-base-dists-normal-median
 
-[@stdlib/stats/base/dists/normal/mode]: https://github.com/stdlib-js/stats-base-dists-normal-mode/tree/umd
+[@stdlib/stats/base/dists/normal/mode]: https://github.com/stdlib-js/stats-base-dists-normal-mode
 
-[@stdlib/stats/base/dists/normal/skewness]: https://github.com/stdlib-js/stats-base-dists-normal-skewness/tree/umd
+[@stdlib/stats/base/dists/normal/skewness]: https://github.com/stdlib-js/stats-base-dists-normal-skewness
 
-[@stdlib/stats/base/dists/normal/stdev]: https://github.com/stdlib-js/stats-base-dists-normal-stdev/tree/umd
+[@stdlib/stats/base/dists/normal/stdev]: https://github.com/stdlib-js/stats-base-dists-normal-stdev
 
-[@stdlib/stats/base/dists/normal/variance]: https://github.com/stdlib-js/stats-base-dists-normal-variance/tree/umd
+[@stdlib/stats/base/dists/normal/variance]: https://github.com/stdlib-js/stats-base-dists-normal-variance
 
-[@stdlib/stats/base/dists/normal/cdf]: https://github.com/stdlib-js/stats-base-dists-normal-cdf/tree/umd
+[@stdlib/stats/base/dists/normal/cdf]: https://github.com/stdlib-js/stats-base-dists-normal-cdf
 
-[@stdlib/stats/base/dists/normal/logcdf]: https://github.com/stdlib-js/stats-base-dists-normal-logcdf/tree/umd
+[@stdlib/stats/base/dists/normal/logcdf]: https://github.com/stdlib-js/stats-base-dists-normal-logcdf
 
-[@stdlib/stats/base/dists/normal/logpdf]: https://github.com/stdlib-js/stats-base-dists-normal-logpdf/tree/umd
+[@stdlib/stats/base/dists/normal/logpdf]: https://github.com/stdlib-js/stats-base-dists-normal-logpdf
 
-[@stdlib/stats/base/dists/normal/mgf]: https://github.com/stdlib-js/stats-base-dists-normal-mgf/tree/umd
+[@stdlib/stats/base/dists/normal/mgf]: https://github.com/stdlib-js/stats-base-dists-normal-mgf
 
-[@stdlib/stats/base/dists/normal/pdf]: https://github.com/stdlib-js/stats-base-dists-normal-pdf/tree/umd
+[@stdlib/stats/base/dists/normal/pdf]: https://github.com/stdlib-js/stats-base-dists-normal-pdf
 
-[@stdlib/stats/base/dists/normal/quantile]: https://github.com/stdlib-js/stats-base-dists-normal-quantile/tree/umd
+[@stdlib/stats/base/dists/normal/quantile]: https://github.com/stdlib-js/stats-base-dists-normal-quantile
 
 <!-- </toc-links> -->
 
