@@ -33,6 +33,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`cc5d91f`](https://github.com/stdlib-js/stdlib/commit/cc5d91fb3df5155821344d6fffbeef23f37e8153) - **style:** remove blank line [(#2339)](https://github.com/stdlib-js/stdlib/pull/2339) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`922122e`](https://github.com/stdlib-js/stdlib/commit/922122e319c37170f16e14ce5d074273fd7f0675) - **docs:** improve examples for `stats/base/dists/normal` namespace _(by NightKnight, Philipp Burckhardt)_
 -   [`41d41e9`](https://github.com/stdlib-js/stdlib/commit/41d41e959b4eaad3c631e6898e3144a4015a5458) - **test:** include trailing newlines in Julia-generated JSON fixtures _(by Philipp Burckhardt)_
 -   [`9ed7d0e`](https://github.com/stdlib-js/stdlib/commit/9ed7d0e7d57edb5ad0dfb65c944bed87d475cbf3) - **chore:** add missing trailing newlines _(by Philipp Burckhardt)_
