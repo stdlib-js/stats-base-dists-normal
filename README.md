@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-normal/tags). For example,
+
+```javascript
 import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@v0.2.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Normal, cdf, entropy, kurtosis, logcdf, logpdf, mean, median, mgf, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@v0.2.2-esm/index.mjs';
+import { Normal, cdf, entropy, kurtosis, logcdf, logpdf, mean, median, mgf, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@esm/index.mjs';
 ```
 
 #### normal
@@ -135,7 +140,7 @@ var y = dist.pdf( 2.0 );
 <body>
 <script type="module">
 
-import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@v0.2.2-esm/index.mjs';
+import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@esm/index.mjs';
 
 /*
 A bakery is analyzing cake baking times to ensure consistency and better schedule their baking processes.
