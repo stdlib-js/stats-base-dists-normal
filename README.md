@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@deno/mod.js';
+import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@v0.3.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Normal, cdf, entropy, kurtosis, logcdf, logpdf, mean, median, mgf, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@deno/mod.js';
+import { Normal, cdf, entropy, kurtosis, logcdf, logpdf, mean, median, mgf, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@v0.3.0-deno/mod.js';
 ```
 
 #### normal
@@ -130,7 +130,7 @@ var y = dist.pdf( 2.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@deno/mod.js';
+import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal@v0.3.0-deno/mod.js';
 
 /*
 A bakery is analyzing cake baking times to ensure consistency and better schedule their baking processes.
