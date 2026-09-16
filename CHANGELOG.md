@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-27)
+## Unreleased (2026-09-16)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`f51d7fe`](https://github.com/stdlib-js/stdlib/commit/f51d7fed453924f3d346c8591c5542dfa9955c5d) - avoid overflow and duplicate computation [(#14446)](https://github.com/stdlib-js/stdlib/pull/14446)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,16 @@
 
 <details>
 
+-   [`d3eaad3`](https://github.com/stdlib-js/stdlib/commit/d3eaad35f633c731ce8112190d74bb2a7577e1e8) - **chore:** clean-up [(#15039)](https://github.com/stdlib-js/stdlib/pull/15039) _(by Philipp Burckhardt, Athan Reines)_
+-   [`4d6ccf4`](https://github.com/stdlib-js/stdlib/commit/4d6ccf493905645ca919043382774ca2c18b8d4a) - **test:** migrate `stats/base/dists/normal/variance` to ULP-based assertions [(#15197)](https://github.com/stdlib-js/stdlib/pull/15197) _(by Athan Reines)_
+-   [`21979ac`](https://github.com/stdlib-js/stdlib/commit/21979acc1a1dd501f4609776e3c49eb87fe337d8) - **test:** migrate `stats/base/dists/normal/quantile` to ULP-based assertions [(#15102)](https://github.com/stdlib-js/stdlib/pull/15102) _(by Athan Reines)_
+-   [`e7362a5`](https://github.com/stdlib-js/stdlib/commit/e7362a5187e2d46115da37880d7083fa3d17d1ec) - **test:** migrate `stats/base/dists/normal/kurtosis` to ULP-based assertions [(#14823)](https://github.com/stdlib-js/stdlib/pull/14823) _(by Athan Reines)_
+-   [`d48c86a`](https://github.com/stdlib-js/stdlib/commit/d48c86addcf3595e88843f82969742a67b4365b9) - **test:** migrate `stats/base/dists/normal/mean` to ULP-based assertions [(#14472)](https://github.com/stdlib-js/stdlib/pull/14472) _(by Athan Reines)_
+-   [`f51d7fe`](https://github.com/stdlib-js/stdlib/commit/f51d7fed453924f3d346c8591c5542dfa9955c5d) - **fix:** avoid overflow and duplicate computation [(#14446)](https://github.com/stdlib-js/stdlib/pull/14446) _(by Philipp Burckhardt)_
+-   [`10dda53`](https://github.com/stdlib-js/stdlib/commit/10dda5309507d8420c36ec20958ae07b6a32fd17) - **chore:** clean-up [(#14413)](https://github.com/stdlib-js/stdlib/pull/14413) _(by Philipp Burckhardt)_
+-   [`e0fb5df`](https://github.com/stdlib-js/stdlib/commit/e0fb5df563511383d03e5615ef649ac1c07568aa) - **test:** migrate `stats/base/dists/normal/mgf` to ULP-based assertions [(#14302)](https://github.com/stdlib-js/stdlib/pull/14302) _(by Athan Reines)_
+-   [`8ce6411`](https://github.com/stdlib-js/stdlib/commit/8ce64114a447ccdda47fa88c39f70a25fb3acf4d) - **test:** migrate `stats/base/dists/normal/cdf` to ULP-based assertions [(#14274)](https://github.com/stdlib-js/stdlib/pull/14274) _(by Athan Reines)_
+-   [`27d30be`](https://github.com/stdlib-js/stdlib/commit/27d30bed3aa1a2e5828f39994eb39e16cb43047f) - **test:** migrate `stats/base/dists/normal/entropy` to ULP-based assertions [(#14227)](https://github.com/stdlib-js/stdlib/pull/14227) _(by Athan Reines)_
 -   [`4a0c3be`](https://github.com/stdlib-js/stdlib/commit/4a0c3be4719f713b69a8ff6b66cc3b0573bf4444) - **docs:** update Markdown equation elements _(by stdlib-bot)_
 -   [`f25221d`](https://github.com/stdlib-js/stdlib/commit/f25221d5fcb5e84cb0ad4951db6f08f254c12d15) - **docs:** update Markdown equation elements _(by stdlib-bot)_
 -   [`6c38993`](https://github.com/stdlib-js/stdlib/commit/6c38993a7eabe55b575ff98f2b997eb31a146eef) - **docs:** update Markdown equation SVGs _(by stdlib-bot)_
