@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-16)
+## Unreleased (2026-11-02)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,13 @@
 
 <details>
 
+-   [`e2a77ec`](https://github.com/stdlib-js/stdlib/commit/e2a77ec64c3b817185334570f41dfc68a5a75a50) - **docs:** update Markdown equation elements _(by stdlib-bot)_
+-   [`2861fe4`](https://github.com/stdlib-js/stdlib/commit/2861fe430548bb441cce624fcfe35a66059c5fba) - **chore:** clean-up [(#16062)](https://github.com/stdlib-js/stdlib/pull/16062) _(by Philipp Burckhardt)_
+-   [`a094e80`](https://github.com/stdlib-js/stdlib/commit/a094e80978c6260d4e08ded044c891a80367ebdc) - **test:** migrate `stats/base/dists/normal/logcdf` to ULP-based assertions [(#15712)](https://github.com/stdlib-js/stdlib/pull/15712) _(by Athan Reines)_
+-   [`9944bb4`](https://github.com/stdlib-js/stdlib/commit/9944bb45598f92b986180fe4b300b511ae599ba5) - **test:** migrate `stats/base/dists/normal/pdf` to ULP-based assertions [(#15437)](https://github.com/stdlib-js/stdlib/pull/15437) _(by Athan Reines)_
+-   [`e091cb6`](https://github.com/stdlib-js/stdlib/commit/e091cb63aacc70e54b0c31fdfc1976b3e89f2daa) - **test:** migrate `stats/base/dists/normal/logpdf` to ULP-based assertions [(#15269)](https://github.com/stdlib-js/stdlib/pull/15269) _(by Athan Reines)_
+-   [`c4244ca`](https://github.com/stdlib-js/stdlib/commit/c4244ca8c32a1a4d273ceff95af6bdc050f4aec9) - **test:** migrate `stats/base/dists/normal/median` to ULP-based assertions [(#15299)](https://github.com/stdlib-js/stdlib/pull/15299) _(by Athan Reines)_
+-   [`7ff87de`](https://github.com/stdlib-js/stdlib/commit/7ff87de78356695ad4ac8cb19f525aed2f3e7127) - **test:** migrate `stats/base/dists/normal/stdev` to ULP-based assertions [(#15312)](https://github.com/stdlib-js/stdlib/pull/15312) _(by Athan Reines)_
 -   [`d3eaad3`](https://github.com/stdlib-js/stdlib/commit/d3eaad35f633c731ce8112190d74bb2a7577e1e8) - **chore:** clean-up [(#15039)](https://github.com/stdlib-js/stdlib/pull/15039) _(by Philipp Burckhardt, Athan Reines)_
 -   [`4d6ccf4`](https://github.com/stdlib-js/stdlib/commit/4d6ccf493905645ca919043382774ca2c18b8d4a) - **test:** migrate `stats/base/dists/normal/variance` to ULP-based assertions [(#15197)](https://github.com/stdlib-js/stdlib/pull/15197) _(by Athan Reines)_
 -   [`21979ac`](https://github.com/stdlib-js/stdlib/commit/21979acc1a1dd501f4609776e3c49eb87fe337d8) - **test:** migrate `stats/base/dists/normal/quantile` to ULP-based assertions [(#15102)](https://github.com/stdlib-js/stdlib/pull/15102) _(by Athan Reines)_
